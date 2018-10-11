@@ -4,4 +4,13 @@ class Api::ExamplesController < ApplicationController
     @selected_fortune = @fortunes.sample
     render "fortune.json.jbuilder"
   end
-  end 
+
+  def lotto_action
+    @numbers = []
+    6.times do
+     @numbers << rand(1..60)
+    end 
+      render "lotto.json.jbuilder"
+   end
+ end
+
