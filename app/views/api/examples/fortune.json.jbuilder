@@ -1,1 +1,1 @@
-json.message "hello there"
+json.message @selected_fortune
